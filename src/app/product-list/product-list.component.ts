@@ -5,16 +5,19 @@ import { products } from '../products';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
   products = products;
 
-  share() {
-    window.alert('The product has been shared!');
+  deseados() {
+    window.alert('El juego ha sido añadido a la lista de deseados');
+  }
+
+  onExistencias() {
+    window.alert('Se notificara cuando hayan nuevas existencias');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

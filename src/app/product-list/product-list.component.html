@@ -2,8 +2,22 @@
 
 <div *ngFor="let product of products">
   <h3>
-    {{ product.name }}
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
   </h3>
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+  <button type="button" (click)="deseados()">
+    Añadir a la lista de deseados
+  </button>
+
+  <app-product-alerts [product]="product" (existencias)="onExistencias()">
+  </app-product-alerts>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

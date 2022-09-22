@@ -1,0 +1,5 @@
+<p *ngIf="product && product.existencias == 0">
+  <button type="button" (click)="existencias.emit()">
+    ¡Avisar de existencias!
+  </button>
+</p>
