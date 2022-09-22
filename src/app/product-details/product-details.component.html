@@ -1,9 +1,9 @@
-<h2>Product Details</h2>
+<h2>Detalles del videojuego</h2>
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <h5>{{ product.existencias }}</h5>
-  <h4>{{ product.price | currency }}</h4>
+  <h5>Disponibles: {{ product.existencias }} Existencias</h5>
+  <h4>Precio: {{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
   <button type="button" (click)="addToCart(product)">Comprar</button>
 </div>

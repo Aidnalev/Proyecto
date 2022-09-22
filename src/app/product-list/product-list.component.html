@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h1>Videojuegos</h1>
 
 <div *ngFor="let product of products">
   <h3>
@@ -9,6 +9,7 @@
       {{ product.name }}
     </a>
   </h3>
+  <h4>Disponibles: {{ product.existencias }} Existencias</h4>
 
   <p *ngIf="product.description">Description: {{ product.description }}</p>
 

@@ -44,7 +44,7 @@ p {
 
 a {
   cursor: pointer;
-  color: #ff0000;
+  color: #ce2525;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ button {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #15ff00;
+  background-color: #1976d2;
   color: rgb(0, 0, 0);
   border: none;
 }
