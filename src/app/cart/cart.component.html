@@ -5,14 +5,41 @@
   <span>{{ item.price | currency }}</span>
   <span>Disponible:{{ item.existencias }}</span>
 </div>
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-  <label for="name"> Nombre </label>
-  <input id="name" type="text" formControlName="name" />
-  <label for="phone"> Telefono </label>
-  <input id="phone" type="text" formControlName="phone" />
-  <label for="address"> Direccion </label>
-  <input id="address" type="text" formControlName="address" />
-  <div>
-    <button class="button" type="submit">Comprar</button>
-  </div>
-</form>
+<details>
+  <summary>Formulario de pago:</summary>
+  <br />
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div>
+      <input
+        id="name"
+        placeholder="Nombre"
+        type="text"
+        formControlName="name"
+      />
+    </div>
+    <div>
+      <input
+        id="phone"
+        placeholder="Telefono"
+        type="text"
+        formControlName="phone"
+      />
+    </div>
+    <div>
+      <input
+        id="address"
+        placeholder="Dirección"
+        type="text"
+        formControlName="address"
+      />
+    </div>
+    <div>
+      <button style="margin-right: 10px" class="button" type="submit">
+        Comprar
+      </button>
+      <button style="margin-left: 10px" class="button" type="reset">
+        Reiniciar
+      </button>
+    </div>
+  </form>
+</details>

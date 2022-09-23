@@ -75,6 +75,7 @@ label {
 button {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 15px;
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
@@ -141,6 +142,13 @@ app-top-bar h1 {
   background-color: #eeeeee;
 }
 
+details {
+  background-color: #ffffff; /* color de fondo cuando no está desplegado */
+}
+
+details[open] {
+  background: #eeeeee; /* color de fondo cuando está desplegado */
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
