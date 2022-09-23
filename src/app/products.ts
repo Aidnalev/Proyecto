@@ -1,6 +1,7 @@
 export interface Product {
   id: number;
   name: string;
+  img: string;
   price: number;
   existencias: number;
   description: string;
@@ -10,6 +11,7 @@ export const products = [
   {
     id: 1,
     name: 'Dark Souls',
+    img: 'https://th.bing.com/th/id/OIP.8UFVnxCjld_aNUYKZ8WAdgHaDt?pid=ImgDet&rs=1',
     price: 290,
     existencias: 23,
     description:
@@ -18,6 +20,7 @@ export const products = [
   {
     id: 2,
     name: 'Dark Souls II',
+    img: 'https://th.bing.com/th/id/OIP.UlfZivFlp0hjCYgAIUQfQAHaEo?pid=ImgDet&rs=1',
     price: 300,
     existencias: 0,
     description:
@@ -26,6 +29,7 @@ export const products = [
   {
     id: 3,
     name: 'Dark Souls III',
+    img: 'https://cdn-ext.fanatical.com/production/product/original/4768f0e6-d9a0-4580-b361-efe3fa1696b2.jpg?w=1200',
     price: 280,
     existencias: 15,
     description:

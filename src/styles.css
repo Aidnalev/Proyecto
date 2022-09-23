@@ -48,7 +48,9 @@ a {
   color: red;
   text-decoration: none;
 }
-
+img {
+  width: 500px;
+}
 a:hover {
   opacity: 0.8;
 }
@@ -130,7 +132,8 @@ app-top-bar h1 {
 
 /* Checkout Cart, */
 
-.cart-item , .deseados-item {
+.cart-item,
+.deseados-item {
   width: 100%;
   min-width: 400px;
   display: flex;

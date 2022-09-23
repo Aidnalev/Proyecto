@@ -2,6 +2,7 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
+  <img src="{{ product.img }}" />
   <h5>Disponibles: {{ product.existencias }} Existencias</h5>
   <h4>Precio: {{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>

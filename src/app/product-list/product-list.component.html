@@ -9,6 +9,9 @@
       {{ product.name }}
     </a>
   </h3>
+  <div>
+    <img src="{{ product.img }}" />
+  </div>
   <h4>Disponibles: {{ product.existencias }} Existencias</h4>
 
   <p *ngIf="product.description">Description: {{ product.description }}</p>
