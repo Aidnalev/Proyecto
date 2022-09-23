@@ -1,16 +1,31 @@
-import { Component } from '@angular/core';
-
-import { products } from '../products';
-
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Product, products } from '../products';
+import { DeseadoService } from '../deseado.service';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
   products = products;
+  product: Product | undefined;
+  constructor(
+    private route: ActivatedRoute,
+    private deseadoService: DeseadoService
+  ) {}
+  ngOnInit() {
+    // First get the product id from the current route.
+    const routeParams = this.route.snapshot.paramMap;
+    const productIdFromRoute = Number(routeParams.get('productId'));
 
-  deseados() {
+    // Find the product that correspond with the id provided in route.
+    this.product = products.find(
+      (product) => product.id === productIdFromRoute
+    );
+  }
+  addToDeseados(product: Product) {
+    this.deseadoService.addToDeseado(product);
     window.alert('El juego ha sido añadido a la lista de deseados');
   }
 

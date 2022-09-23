@@ -130,7 +130,7 @@ app-top-bar h1 {
 
 /* Checkout Cart, */
 
-.cart-item {
+.cart-item , .deseados-item {
   width: 100%;
   min-width: 400px;
   display: flex;
