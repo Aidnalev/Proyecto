@@ -2,16 +2,17 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
+  color: whitesmoke;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  background-image: url(https://th.bing.com/th/id/R.916df838d60518ff9f09aebb1db9f8f5?rik=qpCfgUDh8%2bcy6A&pid=ImgRaw&r=0);
+  background-repeat: initial;
   margin: 0;
 }
-
 .container {
   display: flex;
   flex-direction: row;
@@ -44,7 +45,7 @@ p {
 
 a {
   cursor: pointer;
-  color: #ce2525;
+  color: red;
   text-decoration: none;
 }
 
@@ -75,7 +76,7 @@ label {
 button {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: auto;
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
@@ -114,7 +115,7 @@ button:disabled {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-image: url(https://img.zcool.cn/community/01ac495bd97749a80121ab5d71a15b.jpg@1280w_1l_2o_100sh.jpg);
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -127,28 +128,50 @@ app-top-bar h1 {
   margin: 0;
 }
 
-/* Checkout Cart, Shipping Prices */
+/* Checkout Cart, */
 
 .cart-item {
   width: 100%;
   min-width: 400px;
-  max-width: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #eeeeee;
+  background-color: #2e2e2e;
 }
 
+form {
+  margin-left: 10%;
+  margin-top: auto;
+}
 details {
-  background-color: #ffffff; /* color de fondo cuando no está desplegado */
+  width: 100%;
+  border-radius: 8px;
+  min-width: 300px;
+  position: relative;
+}
+details summary {
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
 }
 
 details[open] {
-  background: #eeeeee; /* color de fondo cuando está desplegado */
+  background: #2e2e2e;
+  min-height: 270px;
 }
+
+details summary::before {
+  position: absolute;
+  content: '⇵';
+  font-size: 1.2rem;
+  top: 16px;
+  right: 20px;
+}
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
