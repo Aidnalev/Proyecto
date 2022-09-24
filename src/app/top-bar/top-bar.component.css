@@ -7,7 +7,7 @@ h2 {
   font-weight: bolder;
   color: rgb(44, 161, 136);
   -webkit-text-fill-color: rgb(44, 161, 136);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 h4 {
