@@ -1,5 +1,15 @@
+h1 {
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
-
+h3 {
+  font-size: 23px;
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

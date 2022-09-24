@@ -1,14 +1,12 @@
 <h1>Videojuegos</h1>
 
 <div *ngFor="let product of products">
-  <h3>
-    <a
-      [title]="product.name + ' details'"
-      [routerLink]="['/products', product.id]"
-    >
-      {{ product.name }}
-    </a>
-  </h3>
+  <a
+    [title]="product.name + ' details'"
+    [routerLink]="['/products', product.id]"
+  >
+    <h3>{{ product.name }}</h3>
+  </a>
   <div>
     <img src="{{ product.img }}" />
   </div>
